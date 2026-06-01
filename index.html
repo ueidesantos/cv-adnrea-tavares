@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andréa Tavares | Vendas Consultivas, Contas Estratégicas & Customer Success</title>
+  <meta name="description" content="CV web de Andréa Tavares: trajetória em vendas consultivas, relacionamento B2B, Key Account Management, pós-venda, Customer Success e soluções corporativas de tecnologia." />
+  <meta name="keywords" content="Andréa Tavares, vendas consultivas, vendas B2B, gerente de contas, executivo de vendas, customer success, key account management, hunter farmer, HaaS, pós-venda, relacionamento com clientes" />
+  <meta name="author" content="Andréa Tavares" />
+  <meta property="og:title" content="Andréa Tavares | Vendas Consultivas & Relacionamento B2B" />
+  <meta property="og:description" content="Uma trajetória construída entre relacionamento, vendas consultivas e crescimento sustentável em ambientes B2B." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Andréa Tavares | Vendas Consultivas & Relacionamento B2B" />
+  <meta name="twitter:description" content="CV web com trajetória profissional em vendas B2B, contas estratégicas, tecnologia, pós-venda e Customer Success." />
+  <style>
+    :root {
+      --bg: #f6efe7;
+      --paper: #fffaf3;
+      --paper-2: #fbf2e7;
+      --ink: #1f1a16;
+      --muted: #6d6258;
+      --line: rgba(72, 45, 28, 0.16);
+      --brown: #6f4428;
+      --brown-dark: #382113;
+      --gold: #c6954e;
+      --gold-soft: rgba(198, 149, 78, 0.18);
+      --green: #415247;
+      --shadow: 0 26px 80px rgba(56, 33, 19, 0.13);
+      --radius-lg: 34px;
+      --radius-md: 24px;
+      --max: 1140px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(198, 149, 78, 0.24), transparent 34%),
+        radial-gradient(circle at 80% 10%, rgba(65, 82, 71, 0.16), transparent 30%),
+        linear-gradient(180deg, #f7f0e7 0%, #f6efe7 52%, #efe4d8 100%);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page { width: min(100% - 32px, var(--max)); margin: 0 auto; }
+
+    header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(246, 239, 231, 0.84);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      width: min(100% - 32px, var(--max)); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+      padding: 17px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 850; letter-spacing: -0.03em; }
+    .brand-mark {
+      width: 42px; height: 42px; border-radius: 16px;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--brown-dark), var(--brown) 48%, var(--gold));
+      color: white; box-shadow: 0 14px 36px rgba(111, 68, 40, 0.25);
+    }
+    .nav-links { display: flex; gap: 18px; color: var(--muted); font-size: 0.92rem; }
+    .nav-links a:hover { color: var(--brown-dark); }
+
+    .hero {
+      min-height: 86vh;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 44px;
+      align-items: center;
+      padding: 82px 0 58px;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 9px 14px; border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255, 250, 243, 0.74); color: var(--brown-dark);
+      font-weight: 820; font-size: 0.9rem; margin-bottom: 22px;
+    }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 7px var(--gold-soft); }
+    h1 {
+      font-size: clamp(3.2rem, 7.6vw, 7rem);
+      line-height: 0.89; letter-spacing: -0.085em; margin-bottom: 26px;
+    }
+    .hero h1 span { color: var(--brown); }
+    .lead {
+      color: var(--muted); font-size: clamp(1.08rem, 2vw, 1.33rem);
+      max-width: 720px; margin-bottom: 34px;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 14px 20px; border-radius: 999px; border: 1px solid var(--line);
+      font-weight: 850; transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(56, 33, 19, .12); }
+    .button.primary { background: var(--brown-dark); color: #fff; border-color: var(--brown-dark); }
+    .button.secondary { background: rgba(255, 250, 243, 0.76); color: var(--brown-dark); }
+
+    .hero-card {
+      position: relative; overflow: hidden;
+      background: rgba(255, 250, 243, 0.76);
+      border: 1px solid var(--line); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow); padding: 26px;
+    }
+    .hero-card::before {
+      content: ""; position: absolute; width: 260px; height: 260px; border-radius: 50%;
+      background: var(--gold-soft); top: -120px; right: -100px;
+    }
+    .portrait {
+      position: relative; min-height: 360px; border-radius: 28px; padding: 30px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      color: white; overflow: hidden;
+      background:
+        linear-gradient(140deg, rgba(56, 33, 19, .96), rgba(111, 68, 40, .9) 50%, rgba(65, 82, 71, .88)),
+        radial-gradient(circle at 20% 12%, rgba(255,255,255,.25), transparent 26%);
+    }
+    .portrait::after {
+      content: "AT"; position: absolute; top: 12px; right: 22px;
+      font-size: 7rem; line-height: 1; font-weight: 950; letter-spacing: -0.08em; opacity: .11;
+    }
+    .portrait h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.02; letter-spacing: -0.055em; margin-bottom: 12px; }
+    .portrait p { color: rgba(255,255,255,.78); max-width: 390px; }
+    .quick-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+    .fact { padding: 16px; border-radius: 20px; background: rgba(255,250,243,.76); border: 1px solid var(--line); }
+    .fact strong { display: block; color: var(--brown-dark); font-size: 1rem; line-height: 1.2; }
+    .fact span { display: block; color: var(--muted); font-size: .84rem; margin-top: 5px; }
+
+    section { padding: 78px 0; }
+    .section-head { display: grid; grid-template-columns: 0.58fr 1.42fr; gap: 40px; align-items: start; margin-bottom: 36px; }
+    .kicker {
+      color: var(--brown); font-weight: 900; text-transform: uppercase; letter-spacing: .13em; font-size: .78rem;
+    }
+    h2 {
+      color: var(--brown-dark); font-size: clamp(2.05rem, 4.3vw, 3.85rem);
+      line-height: .98; letter-spacing: -0.065em; margin-bottom: 18px;
+    }
+    .section-text { color: var(--muted); font-size: 1.07rem; max-width: 790px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card {
+      padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--line);
+      background: rgba(255,250,243,.76); box-shadow: 0 16px 46px rgba(56,33,19,.065);
+    }
+    .card h3 { color: var(--brown-dark); font-size: 1.22rem; letter-spacing: -0.035em; margin-bottom: 12px; }
+    .card p, .card li { color: var(--muted); font-size: .98rem; }
+    .card ul { list-style: none; display: grid; gap: 10px; }
+    .card li::before { content: "•"; color: var(--gold); font-weight: 950; margin-right: 8px; }
+
+    .story { display: grid; grid-template-columns: .92fr 1.08fr; gap: 24px; }
+    .story-panel {
+      padding: 34px; border-radius: var(--radius-lg); color: white;
+      background: linear-gradient(145deg, var(--brown-dark), var(--brown)); box-shadow: var(--shadow);
+      min-height: 440px; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .story-panel h2 { color: white; max-width: 540px; }
+    .story-panel p { color: rgba(255,255,255,.78); font-size: 1.04rem; max-width: 520px; }
+    .timeline { display: grid; gap: 14px; }
+    .timeline-item {
+      display: grid; grid-template-columns: 118px 1fr; gap: 18px;
+      padding: 22px; border-radius: 24px; background: rgba(255,250,243,.76); border: 1px solid var(--line);
+    }
+    .timeline-item time { color: var(--brown); font-weight: 900; text-transform: uppercase; letter-spacing: .09em; font-size: .78rem; }
+    .timeline-item h3 { color: var(--brown-dark); letter-spacing: -0.03em; margin-bottom: 5px; }
+    .timeline-item p { color: var(--muted); }
+
+    .experience { display: grid; gap: 18px; }
+    .role {
+      display: grid; grid-template-columns: 1fr 2fr; gap: 24px;
+      padding: 26px; border: 1px solid var(--line); border-radius: var(--radius-md);
+      background: rgba(255,250,243,.78);
+    }
+    .role .company { color: var(--brown-dark); font-weight: 900; font-size: 1.2rem; letter-spacing: -0.035em; }
+    .role .meta { color: var(--brown); font-weight: 850; font-size: .9rem; margin-top: 4px; }
+    .role p { color: var(--muted); }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 11px; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 14px; border-radius: 999px; border: 1px solid var(--line);
+      background: rgba(255,250,243,.76); color: var(--brown-dark); font-weight: 820; font-size: .92rem;
+    }
+    .quote {
+      padding: 34px; border-radius: var(--radius-lg); box-shadow: var(--shadow);
+      background: linear-gradient(135deg, var(--green), var(--brown-dark)); color: white;
+    }
+    .quote p { font-size: clamp(1.45rem, 3vw, 2.45rem); line-height: 1.12; font-weight: 900; letter-spacing: -0.055em; }
+    .quote small { display: block; margin-top: 22px; color: rgba(255,255,255,.72); font-weight: 800; }
+
+    .share-box {
+      padding: 26px; border-radius: var(--radius-md); background: rgba(255,250,243,.78); border: 1px solid var(--line);
+    }
+    .share-box h3 { color: var(--brown-dark); margin-bottom: 10px; letter-spacing: -0.035em; }
+    .share-box p { color: var(--muted); }
+    .share-box strong { color: var(--brown-dark); }
+
+    .contact {
+      text-align: center; padding: 72px 34px; border-radius: 38px; margin-bottom: 70px;
+      background: linear-gradient(135deg, var(--brown-dark), var(--brown)); color: white; box-shadow: var(--shadow);
+    }
+    .contact h2 { color: white; max-width: 780px; margin: 0 auto 18px; }
+    .contact p { color: rgba(255,255,255,.76); max-width: 700px; margin: 0 auto 30px; font-size: 1.05rem; }
+    .contact .button { background: white; color: var(--brown-dark); border-color: white; }
+    footer { text-align: center; color: var(--muted); padding: 28px 0 42px; font-size: .9rem; }
+
+    @media (max-width: 920px) {
+      .nav-links { display: none; }
+      .hero, .section-head, .story, .grid-2, .role { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .quick-facts { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      section { padding: 56px 0; }
+      h1 { font-size: clamp(3.1rem, 17vw, 5.2rem); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="#top" aria-label="Início">
+        <span class="brand-mark">AT</span>
+        <span>Andréa Tavares</span>
+      </a>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#competencias">Competências</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="page">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Vendas B2B • Contas Estratégicas • Customer Success</div>
+        <h1 id="hero-title">Andréa <span>Tavares</span></h1>
+        <p class="lead">
+          Uma trajetória construída entre relacionamento, vendas consultivas e crescimento sustentável em ambientes B2B — conectando clientes, soluções corporativas e resultados de longo prazo.
+        </p>
+        <div class="cta-row">
+          <a class="button primary" href="https://www.linkedin.com/in/andr%C3%A9a-tavares2025/" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+          <a class="button secondary" href="mailto:andrea_ctavares@yahoo.com.br">Entrar em contato</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Resumo profissional">
+        <div class="portrait">
+          <h2>Gerente de Contas | Executiva de Vendas | Relacionamento & Pós-venda</h2>
+          <p>Perfil Hunter & Farmer, com experiência em Key Account Management, Customer Success, vendas consultivas e soluções B2B complexas.</p>
+        </div>
+        <div class="quick-facts">
+          <div class="fact"><strong>Hunter & Farmer</strong><span>Prospecção, carteira e expansão</span></div>
+          <div class="fact"><strong>HaaS & TI</strong><span>Infraestrutura, serviços e soluções</span></div>
+          <div class="fact"><strong>KPIs & NPS</strong><span>Acompanhamento e relacionamento</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="sobre" aria-labelledby="sobre-title">
+      <div class="section-head">
+        <p class="kicker">Sobre a Andréa</p>
+        <div>
+          <h2 id="sobre-title">Vender bem é entender o cliente antes de oferecer uma solução.</h2>
+          <p class="section-text">
+            Andréa Tavares é uma profissional comercial com trajetória em relacionamento corporativo, vendas consultivas, gestão de contas estratégicas e pós-venda. Sua carreira começou em ambientes de seguros e relacionamento, onde desenvolveu base sólida em atendimento, contratos, propostas e renovação. Depois, migrou para tecnologia e soluções B2B, atuando com fabricantes, canais, infraestrutura, HaaS, Cloud, Data Center, Service Desk, Field Service e inovação.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Relacionamento consultivo</h3>
+          <p>Atuação próxima ao cliente para entender contexto, antecipar necessidades e construir relações comerciais sustentáveis.</p>
+        </article>
+        <article class="card">
+          <h3>Venda B2B complexa</h3>
+          <p>Experiência com soluções que combinam tecnologia, serviços, infraestrutura, hardware, software e projetos sob medida.</p>
+        </article>
+        <article class="card">
+          <h3>Retenção e expansão</h3>
+          <p>Foco em adoção, pós-venda, cross-sell, upsell, renovação contratual, KPIs, NPS e crescimento previsível.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="trajetoria" class="story" aria-labelledby="trajetoria-title">
+      <div class="story-panel">
+        <div>
+          <p class="kicker" style="color: var(--gold);">Storytelling profissional</p>
+          <h2 id="trajetoria-title">Do relacionamento à venda consultiva estratégica.</h2>
+        </div>
+        <p>
+          A trajetória de Andréa pode ser contada como a evolução de uma profissional que aprendeu a cuidar da relação com o cliente, transformou essa base em repertório comercial e consolidou sua atuação em ambientes B2B de maior complexidade.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <time>2000–2017</time>
+          <div>
+            <h3>Base em seguros, contratos e relacionamento</h3>
+            <p>Construção de fundamentos comerciais em Icatu, Cofesp e Arbos: atendimento consultivo, propostas, contratos, renovações, suporte pós-venda, relacionamento corporativo e retenção.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>2018–2021</time>
+          <div>
+            <h3>Transição para tecnologia, canais e soluções B2B</h3>
+            <p>Passagem por Lenovo, ScanSource e HP, fortalecendo atuação com clientes SMB, revendas, distribuidores, fabricantes, pipeline, forecast, negociação e expansão de canais.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>2022–2025</time>
+          <div>
+            <h3>Consolidação em contas estratégicas e HaaS</h3>
+            <p>Atuação em Agasus, Arklok e Engemon IT com gestão de carteira, soluções HaaS, infraestrutura de TI, Cloud, Data Center, Service Desk, Field Service, QBRs, KPIs, NPS e crescimento sustentável.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>2026</time>
+          <div>
+            <h3>Posicionamento atual: projetos, relacionamento e experiência do cliente</h3>
+            <p>Na Telelok, atua com locação e venda de soluções em mobiliário corporativo, colaboração com arquitetos, projetistas e facilities, gestão de contas estratégicas e projetos de alto valor.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia" aria-labelledby="experiencia-title">
+      <div class="section-head">
+        <p class="kicker">Experiências em destaque</p>
+        <div>
+          <h2 id="experiencia-title">Uma carreira entre relacionamento, tecnologia e contas estratégicas.</h2>
+          <p class="section-text">As experiências foram agrupadas para evidenciar narrativa e posicionamento, sem transformar a página em uma lista fria de cargos.</p>
+        </div>
+      </div>
+
+      <div class="experience">
+        <article class="role">
+          <div>
+            <div class="company">Telelok</div>
+            <div class="meta">Executivo de Contas • 2026–atual</div>
+          </div>
+          <p>Locação e venda de soluções em mobiliário corporativo, atuando em colaboração com arquitetos, projetistas e equipes de facilities. Gestão de contas estratégicas e projetos de alto valor, com foco em performance comercial, rentabilidade e excelência na experiência do cliente.</p>
+        </article>
+        <article class="role">
+          <div>
+            <div class="company">Engemon IT</div>
+            <div class="meta">Account Manager • 2023–2025</div>
+          </div>
+          <p>Atuação com soluções integradas de TI em infraestrutura e inovação: HaaS, Cloud, Data Center, Service Desk, Field Service, Analytics e Realidade Aumentada. Prospecção, qualificação BANT/SPIN, gestão consultiva de carteira, propostas técnicas, QBRs, KPIs e NPS.</p>
+        </article>
+        <article class="role">
+          <div>
+            <div class="company">Arklok Tecnologia & Agasus</div>
+            <div class="meta">Contas, HaaS e infraestrutura de TI • 2022–2023</div>
+          </div>
+          <p>Gestão de contas corporativas no modelo HaaS, retenção, expansão, renovações, cross-selling, upselling, projetos tecnológicos complexos e relacionamento com tomadores de decisão. Integração com pré-vendas, pós-vendas, suporte, implantação e projetos.</p>
+        </article>
+        <article class="role">
+          <div>
+            <div class="company">HP, ScanSource e Lenovo</div>
+            <div class="meta">Canais, fabricantes e soluções B2B • 2018–2021</div>
+          </div>
+          <p>Atuação em vendas consultivas de tecnologia, gestão de canais, revendas, distribuidores, clientes SMB, forecast, Salesforce CRM, pipeline, negociação de margens, condições comerciais e expansão de soluções no mercado corporativo.</p>
+        </article>
+        <article class="role">
+          <div>
+            <div class="company">Icatu, Cofesp, Arbos e Ô Insurance Group</div>
+            <div class="meta">Seguros, benefícios e relacionamento • 2000–2018</div>
+          </div>
+          <p>Base profissional em relacionamento com clientes corporativos, seguros, benefícios, propostas comerciais, contratos, renovação de apólices, pós-venda, retenção, comissões, indicadores, prospecção e negociação consultiva.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="competencias" aria-labelledby="competencias-title">
+      <div class="section-head">
+        <p class="kicker">Competências</p>
+        <div>
+          <h2 id="competencias-title">Repertório comercial orientado a valor.</h2>
+          <p class="section-text">O diferencial da Andréa está na combinação entre venda, relacionamento, pós-venda, gestão de carteira e leitura de contexto de negócio.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Competências principais</h3>
+          <div class="skills">
+            <span class="pill">Vendas Consultivas</span>
+            <span class="pill">Vendas B2B Estratégicas</span>
+            <span class="pill">Key Account Management</span>
+            <span class="pill">Customer Success</span>
+            <span class="pill">Hunter & Farmer</span>
+            <span class="pill">Pós-venda</span>
+            <span class="pill">Gestão de Carteira</span>
+            <span class="pill">Cross-sell & Upsell</span>
+            <span class="pill">Renovação Contratual</span>
+            <span class="pill">Pipeline & Forecast</span>
+            <span class="pill">QBRs</span>
+            <span class="pill">KPIs & NPS</span>
+          </div>
+        </div>
+        <div class="quote">
+          <p>“Relacionamento não é etapa do funil. É o que sustenta a venda antes, durante e depois do contrato.”</p>
+          <small>Proposta de posicionamento profissional</small>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="tools-title">
+      <div class="section-head">
+        <p class="kicker">Ferramentas e contexto</p>
+        <div>
+          <h2 id="tools-title">Tecnologia, dados comerciais e acompanhamento.</h2>
+          <p class="section-text">Experiência em ambientes comerciais que exigem previsibilidade, acompanhamento de contas, colaboração com áreas internas e gestão de indicadores.</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>Salesforce</li>
+            <li>Dynamics</li>
+            <li>NectarCRM</li>
+            <li>Pacote Office avançado</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Ambientes de solução</h3>
+          <ul>
+            <li>HaaS e locação de infraestrutura</li>
+            <li>Cloud, Data Center e Field Service</li>
+            <li>Service Desk, Analytics e Realidade Aumentada</li>
+            <li>Mobiliário corporativo e facilities</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Métricas a destacar</h3>
+          <ul>
+            <li>[Inserir % de crescimento, se houver]</li>
+            <li>[Inserir carteira atendida, se houver]</li>
+            <li>[Inserir volume de contas, se houver]</li>
+            <li>[Inserir ticket médio ou receita, se houver]</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="target-title">
+      <div class="section-head">
+        <p class="kicker">Para quem este perfil conversa</p>
+        <div>
+          <h2 id="target-title">Boa leitura para headhunters, liderança comercial e network profissional.</h2>
+          <p class="section-text">A página foi desenhada para apresentar a Andréa como uma profissional comercial madura, com repertório em B2B, tecnologia, relacionamento e experiência do cliente.</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <article class="card"><h3>Headhunters</h3><p>Clareza de posicionamento para oportunidades em vendas consultivas, gestão de contas, Customer Success e desenvolvimento de negócios.</p></article>
+        <article class="card"><h3>Lideranças comerciais</h3><p>Ênfase em geração de valor, relacionamento, previsibilidade de pipeline, retenção e expansão de clientes.</p></article>
+        <article class="card"><h3>Network profissional</h3><p>Storytelling elegante para facilitar apresentação, indicação, conexão e conversas sobre oportunidades futuras.</p></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="share-title">
+      <div class="section-head">
+        <p class="kicker">Mensagens de compartilhamento</p>
+        <div>
+          <h2 id="share-title">Como apresentar o portfólio.</h2>
+          <p class="section-text">Sugestões prontas para LinkedIn, headhunters e network profissional.</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="share-box">
+          <h3>LinkedIn — curta</h3>
+          <p>Olá! Estou compartilhando meu portfólio profissional com um resumo da minha trajetória em vendas consultivas, relacionamento B2B, gestão de contas e Customer Success. Será um prazer me conectar e trocar ideias sobre oportunidades e mercado.</p>
+        </div>
+        <div class="share-box">
+          <h3>Headhunters — elegante</h3>
+          <p>Olá! Tudo bem? Preparei um CV web com uma visão mais completa da minha trajetória em vendas B2B, gestão de contas estratégicas, pós-venda e soluções corporativas de tecnologia. A ideia é apresentar meu perfil de forma mais consultiva e objetiva para oportunidades alinhadas a relacionamento, contas e crescimento comercial.</p>
+        </div>
+        <div class="share-box">
+          <h3>Network profissional</h3>
+          <p>Oi! Estou organizando minha apresentação profissional em um formato mais moderno, com foco na minha trajetória comercial, experiência com clientes B2B, tecnologia, relacionamento e expansão de contas. Compartilho aqui caso faça sentido para conexões, indicações ou conversas futuras.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Vamos conversar sobre vendas B2B, relacionamento e crescimento sustentável?</h2>
+      <p>Perfil disponível para networking profissional, conexões estratégicas e oportunidades em vendas consultivas, contas estratégicas, Customer Success, pós-venda e desenvolvimento de negócios.</p>
+      <div class="cta-row" style="justify-content:center;">
+        <a class="button" href="mailto:andrea_ctavares@yahoo.com.br">Enviar e-mail</a>
+        <a class="button" href="https://www.linkedin.com/in/andr%C3%A9a-tavares2025/" target="_blank" rel="noopener noreferrer">Conectar no LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page">
+    <p>Andréa Tavares • São Paulo, Brasil • Vendas Consultivas • Key Account Management • Customer Success</p>
+  </footer>
+</body>
+</html>
